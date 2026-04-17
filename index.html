@@ -1,225 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ministerio Derribando Gigantes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ministerio Derribando Gigantes</title>
+
+<style>
+body{font-family:'Segoe UI',sans-serif;margin:0;background:#eef2f7;}
+header{background:linear-gradient(120deg,#4b6cb7,#182848);color:white;padding:25px;text-align:center;}
+nav{background:#111;padding:10px;text-align:center;position:sticky;top:0;}
+nav a{color:white;margin:0 8px;text-decoration:none;font-size:14px;}
+.container{padding:15px;max-width:1000px;margin:auto;}
+.section{background:white;padding:18px;border-radius:12px;margin-bottom:15px;box-shadow:0 4px 10px rgba(0,0,0,0.08); transition:0.2s;}
+.section:hover{transform:scale(1.02);}
+h2{color:#4b6cb7;}
+iframe{width:100%;height:200px;border-radius:10px;}
+audio{width:100%;margin-top:10px;}
+input, textarea{width:100%;padding:10px;margin-top:8px;border-radius:6px;border:1px solid #ccc;}
+button{margin-top:10px;padding:10px;background:#4b6cb7;color:white;border:none;border-radius:6px;}
+footer{background:#111;color:white;text-align:center;padding:20px;}
+</style>
+
 </head>
-<body style="font-family: Arial; text-align:center; padding:40px;">
-  <h1>Ministerio Derribando Gigantes</h1>
-  <p>Derribando obstáculos espirituales y formando vidas con propósito</p>
-  <p>Contacto: neirobysc@gmail.com</p>
- <a href="#peticiones">Peticiones</a> <a href="https://wa.me/573027596803">Escribir por WhatsApp</a>
+
+<body>
+
+<header>
+<h1>Ministerio Derribando Gigantes</h1>
+<p>Plataforma espiritual digital</p>
+</header>
+
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#devocional">Devocional</a>
+<a href="#videos">Videos</a>
+<a href="#audio">Audio</a>
+<a href="#peticiones">Peticiones</a>
+<a href="#testimonios">Testimonios</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+<div class="container">
+
+<div id="inicio" class="section">
+<h2>Bienvenido</h2>
+<p>Un espacio donde Dios transforma vidas, restaura familias y levanta propósito.</p>
+</div>
+
+<div id="devocional" class="section">
+<h2>📖 Devocional Diario</h2>
+<p id="devocionalTexto"></p>
+</div>
+
+<div id="videos" class="section">
+<h2>🎥 Predicaciones en Video</h2>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:15px;">
+<iframe src="https://www.youtube.com/embed/K1d1W6FebC4" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/K1d1W6FebC4" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/K1d1W6FebC4" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/K1d1W6FebC4" allowfullscreen></iframe>
+</div>
+
+</div>
+
+<div id="audio" class="section">
+<h2>🎧 Mensaje de Hoy</h2>
+
+<audio controls>
+<source src="https://drive.google.com/uc?export=download&id=1ys0BV-FVTXmc4ZYB8wR-RVEXqP32y33M" type="audio/mpeg">
+</audio>
+
+</div>
+
+<div id="peticiones" class="section">
+<h2>🙏 Peticiones</h2>
+
+<form action="https://formspree.io/f/XXXXXXX" method="POST">
+<input type="text" name="nombre" placeholder="Tu nombre" required>
+<textarea name="mensaje" placeholder="Escribe tu petición" required></textarea>
+<button type="submit">Enviar petición</button>
+</form>
+
+</div>
+
+<div id="testimonios" class="section">
+<h2>🔥 Testimonios</h2>
+
+<p><strong>María:</strong> Dios restauró mi hogar</p>
+<p><strong>Juan:</strong> Hoy tengo paz</p>
+
+<form action="https://formspree.io/f/XXXXXXX" method="POST">
+<input type="text" name="nombre" placeholder="Tu nombre" required>
+<textarea name="testimonio" placeholder="Escribe tu testimonio" required></textarea>
+<button type="submit">Enviar testimonio</button>
+</form>
+
+</div>
+
+<div id="contacto" class="section">
+<h2>Contacto</h2>
+<p>📧 neirobysc@gmail.com</p>
+</div>
+
+</div>
+
+<a href="https://wa.me/573027596803" style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px;border-radius:50%;">💬</a>
+
+<footer>
+<p>© 2026 Ministerio Derribando Gigantes</p>
+</footer>
+
+<script>
+const devocionales = [
+"Hoy es un día para confiar en Dios.",
+"Dios pelea tus batallas.",
+"No estás solo.",
+"Tu fe vencerá cualquier gigante.",
+"Dios restaura todo."
+];
+
+const hoy = new Date().getDate();
+document.getElementById("devocionalTexto").innerText = devocionales[hoy % devocionales.length];
+</script>
+
 </body>
-</html><!DOCTYPE html><html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ministerio Derribando Gigantes</title>  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      background-color: #f5f7fa;
-      color: #333;
-    }
-
-    header {
-      background: linear-gradient(120deg, #4b6cb7, #182848);
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.3em;
-    }
-
-    nav {
-      background: #222;
-      padding: 12px;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      color: #4b6cb7;
-    }
-
-    .container {
-      padding: 30px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .section {
-      background: white;
-      margin-bottom: 25px;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-
-    .section h2 {
-      color: #4b6cb7;
-    }
-
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background: #4b6cb7;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-    .btn:hover {
-      background: #182848;
-    }
-  </style></head><body><header>
-  <h1>Ministerio Derribando Gigantes</h1><p>
-Este ministerio nace para levantar una generación que no se rinde, que enfrenta sus gigantes y camina en propósito.
-Aquí encontrarás dirección, enseñanza y restauración para tu vida, tu familia y tu llamado.
-</p>
-  <p>Derribando obstáculos espirituales y formando vidas con propósito</p>
-</header><nav>
-  <a href="#inicio">Inicio</a>
-  <a href="#crecimiento">Crecimiento</a>
-  <a href="#familia">Familia</a>
-  <a href="#parejas">Parejas</a>
-  <a href="#hijos">Hijos</a>
-  <a href="#liderazgo">Liderazgo</a>
-  <a href="#contacto">Contacto</a>
-</nav><div class="container">  <div id="inicio" class="section">
-    <h2>Bienvenido</h2>
-    <p>Este ministerio nace con el propósito de guiar vidas hacia un crecimiento espiritual sólido, fortaleciendo familias, restaurando relaciones y formando líderes con principios en la iglesia, el hogar y la sociedad.</p>
-  </div>  <div id="crecimiento" class="section">
-    <h2>Crecimiento Espiritual</h2>
-    <p>Aprende a fortalecer tu relación con Dios, desarrollar disciplina espiritual y vivir una vida con propósito.</p>
-  </div>  <div id="familia" class="section">
-    <h2>Familia</h2>
-    <p>Enseñanzas para construir hogares sanos basados en amor, respeto y principios espirituales.</p>
-<hr>
-
-<h3>📖 Tema: Venciendo Gigantes Internos</h3>
-<p>Todos enfrentamos gigantes como el miedo, la duda, la ansiedad y la falta de fe. Pero no estás solo. Dios te ha dado herramientas para vencer.</p>
-
-<ul>
-  <li>Identifica tu gigante</li>
-  <li>Declara palabra sobre tu vida</li>
-  <li>Rodéate de fe, no de duda</li>
-</ul>
-
-<hr>
-
-<h3>🙏 Tema: El poder de la oración</h3>
-<p>La oración es la conexión directa con Dios. Es donde encuentras paz, dirección y fortaleza.</p>
-
-<ul>
-  <li>Ora cada mañana</li>
-  <li>Habla con sinceridad</li>
-  <li>Escucha en silencio</li>
-</ul> <hr>
-
-<h3>📖 Tema: Venciendo Gigantes Internos</h3>
-<p>Todos enfrentamos gigantes como el miedo, la duda, la ansiedad y la falta de fe. Pero no estás solo. Dios te ha dado herramientas para vencer.</p>
-
-<ul>
-  <li>Identifica tu gigante</li>
-  <li>Declara palabra sobre tu vida</li>
-  <li>Rodéate de fe, no de duda</li>
-</ul>
-
-<hr>
-
-<h3>🙏 Tema: El poder de la oración</h3>
-<p>La oración es la conexión directa con Dios. Es donde encuentras paz, dirección y fortaleza.</p>
-
-<ul>
-  <li>Ora cada mañana</li>
-  <li>Habla con sinceridad</li>
-  <li>Escucha en silencio</li>
-</ul> </div> <hr>
-
-<h3>📖 Tema: Venciendo Gigantes Internos</h3>
-<p>Todos enfrentamos gigantes como el miedo, la duda, la ansiedad y la falta de fe. Pero no estás solo. Dios te ha dado herramientas para vencer.</p>
-
-<p><strong>Claves:</strong></p>
-<ul>
-  <li>Identifica tu gigante</li>
-  <li>Declara palabra sobre tu vida</li>
-  <li>Rodéate de fe, no de duda</li>
-</ul>
-
-<hr>
-
-<h3>🙏 Tema: El poder de la oración</h3>
-<p>La oración no es solo hablar, es conectar con Dios. Es donde recibes dirección, paz y fuerza.</p>
-
-<p><strong>Practica:</strong></p>
-<ul>
-  <li>Ora cada mañana</li>
-  <li>Habla con sinceridad</li>
-  <li>Escucha en silencio</li>
-</ul> <div id="parejas" class="section">
-    <h2>Relaciones de Pareja</h2>
-    <p>Consejos para fortalecer la comunicación, la confianza y el compromiso en la relación.</p>
-  </div>  <div id="hijos" class="section">
-    <h2>Formación de Hijos</h2>
-    <p>Guía para formar el carácter, valores y conducta de niños y jóvenes.</p>
-  </div>  <div id="liderazgo" class="section">
-    <h2>Liderazgo</h2>
-    <p>Desarrolla liderazgo con principios para impactar la iglesia, el hogar y la sociedad.</p>
-  </div>  <div id="contacto" class="section">
-    <h2>Contacto</h2>
-    <p>📧 Correo: neirobysc@gmail.com</p>
-    <a class="btn" href="https://wa.me/573027596803" target="_blank">Escribir por WhatsApp</a>
-  </div></div><footer>
-  <p>© 2026 Ministerio Derribando Gigantes</p>
-</footer><a href="https://wa.me/573027596803" 
-   style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px; border-radius:50%; text-decoration:none; font-size:20px;">
-   💬
-</a><a href="https://wa.me/573027596803" 
-   style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px; border-radius:50%; text-decoration:none; font-size:20px;">
-   💬
-</a><a href="https://wa.me/573027596803" 
-   style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px; border-radius:50%; text-decoration:none; font-size:20px;">
-   💬
-</a> <div class="section">
-  <h2>🎧 Mensaje de Hoy</h2>
-
-  <audio controls>
-    <source src="https://drive.google.com/uc?export=download&id=1ys0BV-FVTXmc4ZYB8wR-RVEXqP32y33M" type="audio/mpeg">
-  </audio>
-
-</div> <div class="section">
-  <h2>🎥 Predicaciones en Video</h2>
-
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px;">
-
-    <iframe src="https://www.youtube.com/embed/K1d1W6FebC4" allowfullscreen></iframe>
-
-    <iframe src="https://www.youtube.com/embed/VIDEO2" allowfullscreen></iframe>
-
-    <iframe src="https://www.youtube.com/embed/VIDEO3" allowfullscreen></iframe>
-
-    <iframe src="https://www.youtube.com/embed/VIDEO4" allowfullscreen></iframe>
-
-  </div>
-
-</div> </body>
 </html>
